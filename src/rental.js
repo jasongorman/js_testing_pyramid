@@ -1,8 +1,16 @@
-const price = require('./pricer.js');
+const Pricer = require('./pricer');
 
-const rent = (imdbId) => {
-    const movie = price(imdbId);
-    return {id: imdbId, title: movie.title, price: movie.price};
+class Rental {
+    id;
+    title;
+    price;
+
+    constructor(imdbId) {
+        this.id = imdbId;
+        const movie = new Pricer().price(imdbId);
+        this.title = movie.title;
+        this.price = movie.price;
+    }
 }
 
-module.exports = rent;
+module.exports = Rental;

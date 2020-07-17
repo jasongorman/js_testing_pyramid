@@ -1,11 +1,12 @@
-const rent = require('./rental.js');
-const ratings = require('./ratings');
+const Rental = require('./rental');
+const Ratings = require('./ratings');
 
 let args = process.argv.slice(2)
 
 let imdbId = args[0];
 
-console.log(rent(imdbId));
+console.log(new Rental(imdbId));
+console.log(new Ratings().fetch(imdbId));
 
 /*
     Example movies:
