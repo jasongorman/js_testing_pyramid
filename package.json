@@ -1,0 +1,22 @@
+{
+  "name": "js-legacy-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasongorman/JS-LEGACY-CODE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasongorman/JS-LEGACY-CODE/issues"
+  },
+  "homepage": "https://github.com/jasongorman/JS-LEGACY-CODE#readme",
+  "dependencies": {
+    "sync-request": "^6.1.0"
+  }
+}
