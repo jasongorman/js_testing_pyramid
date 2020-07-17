@@ -6,7 +6,6 @@ let args = process.argv.slice(2)
 let imdbId = args[0];
 
 console.log(rent(imdbId));
-console.log(ratings(imdbId));
 
 /*
     Example movies:
